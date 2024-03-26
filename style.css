@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    background-color: black;
+}
+.menu ul{
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.menu ul li a{
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: .5s;
+}
+.menu ul li a:hover{
+    background-color: aqua;
+}
+/* DropDown */
+.menu ul li ul.dropdown{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: red;
+    width: 200px;
+    border-top: 5px solid greenyellow;
+    visibility: hidden;
+    transition: .5s;
+    opacity: 0;
+}
+.menu ul li ul.dropdown li{
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #fff;
+}
+.menu ul li ul.dropdown li  a{
+    display: block;
+}
+.menu ul li:hover ul.dropdown{
+    visibility: visible;
+    opacity: 1;
+}
+/* Style-Dropdown */
+.menu ul li ul.dropdown li ul.style{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: blue;
+    width: 200px;
+    border-top: 5px solid green;
+    visibility: hidden;
+    transition: .5s;
+    opacity: 0;
+}
+.menu ul li ul.dropdown li:hover ul.style{
+    visibility: visible;
+    opacity: 1;
+}
+/* Active Color */
+.menu ul li:hover > a{
+    background-color: #4477e1;
+}
+/* Home-Section */
+.home-section{
+    background-image: url(https://i.ibb.co/t83wLvL/young-mens.png);
+    height: 800px;
+    width: 100%;
+    background-position: center center;
+    margin-top: -16px;
+    text-align: center;
+    display: inline-block;
+}
+.home-section .content{
+    margin-top: 270px;
+}
+.home-section .content h1{
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.home-section .content h4{
+    background-color: #fff;
+    font-size: 24px;
+    display: block;
+    padding: 10px 50px;
+    margin: 0px 60px;
+    margin-bottom: 20px;
+}
+.home-section .content button{
+    background-color: #ff1d00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.home-section .content button a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+.home-section .content button:hover{
+    background-color: #fff;
+    color: black;
+    border: 1px solid red;
+    transition: .5s;
+}
+.home-section .content button a:hover{
+    color: black;
+}
+/*  Position-Section  */
+.list-style-position{
+    text-align: center;
+}
+.list-style-position .box1{
+    /* list-style: disc outside url(https://www.w3schools.com/cssref/sqpurple.gif); */
+    list-style-position: outside;
+    padding: 30px 0px;
+    margin: 20px;
+    border: 1px solid #e5a2a2;
+}
+.list-style-position .box2{
+    list-style-position: inside;
+    padding: 30px 0px;
+    box-shadow: 5px 5px 10px 15px lightblue;
+    margin: 20px;
+}
+/* Subscrive-Section */
+.subscrive{
+    text-align: center;
+    background-color: #b4a8a8;
+    padding: 50px 0px;
+    margin-top: 50px;
+}
+.subscrive input[type="email"]{
+    width: 500px;
+    height: 50px;
+    padding: 0px 16px;
+    border: none;
+    border-bottom: 2px solid red;
+}
+.subscrive input[type="submit"]{
+    height: 51px;
+    background-color: #ff1000;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    padding: 0px 15px;
+    margin-left: -4px;
+}
+.subscrive input[type="submit"]:hover{
+    background-color: #fff;
+    color: black;
+    border: 1px solid red;
+}
+/* list-style-type */
+.list-style-type{
+    text-align: center;
+    padding: 20px 0px;
+    border-style: dotted dotted none dotted;
+    border-color: rgb(218, 214, 214);
+    margin-top: 40px;
+}
+.list-style-type h1{
+    font-weight: 400;
+}
+.list-style-type .lower-roman{
+    list-style-type: lower-roman;
+    display: inline-block;
+    margin: 20px;
+}
+.list-style-type .square{
+    list-style-type: square;
+    display: inline-block;
+    margin: 20px;
+}
+.list-style-type .lower-greek{
+    list-style-type: lower-greek;
+    display: inline-block;
+    margin: 20px;
+}
+.list-style-type .circle{
+    list-style-type: circle;
+    display: inline-block;
+    margin: 20px;
+}
+.list-style-type .upper-latin{
+    list-style-type: upper-latin;
+    display: inline-block;
+    margin: 20px;
+}
+.list-style-type .decimal-leading-zero{
+    list-style-type: decimal-leading-zero;
+    display: inline-block;
+    margin: 20px;
+}
+.list-style-type .decimal{
+    list-style-type: decimal;
+    display: inline-block;
+    margin: 20px;
+}
+.list-style-type .katakana-iroha{
+    list-style-type: katakana-iroha;
+    display: inline-block;
+    margin: 20px;
+}
+/* Footer-Section */
+.footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px 0px;
+}
+.footer p{
+    color: #fff;
+    font-weight: bold;
+}
+.footer .social-icon ul li{
+    display: inline-block;
+    font-size: 20px;
+    background-color: #539df7;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    transition: 1s;
+}
+.footer .social-icon ul li a{
+    color: black;
+   
+}
+.social-icon ul li:hover{
+    background-color: #fff;
+    color: #539df7;
+}
+.social-icon ul li:hover a{
+    color: red;
+}
